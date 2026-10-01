@@ -1,42 +1,41 @@
 {
-  "expo": {
-    "name": "soundlight-mobile",
-    "slug": "soundlight-mobile",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "soundlightmobile",
-    "userInterfaceStyle": "automatic",
-    "ios": {
-      "icon": "./assets/expo.icon"
-    },
-    "android": {
-      "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/android-icon-foreground.png",
-        "backgroundImage": "./assets/images/android-icon-background.png",
-        "monochromeImage": "./assets/images/android-icon-monochrome.png"
-      },
-      "predictiveBackGestureEnabled": false
-    },
-    "web": {
-      "output": "static",
-      "favicon": "./assets/images/favicon.png"
-    },
-    "plugins": [
-      "expo-router",
-      [
-        "expo-splash-screen",
-        {
-          "backgroundColor": "#208AEF",
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 76
+    "expo": {
+        "name": "soundlight-mobile",
+        "slug": "soundlight-mobile",
+        "newArchEnabled": false,
+        "version": "1.0.0",
+        "orientation": "default",
+        "icon": "./assets/images/icon.png",
+        "scheme": "soundlightmobile",
+        "userInterfaceStyle": "automatic",
+        "android": {
+            "adaptiveIcon": {
+                "backgroundColor": "#3A2723",
+                "foregroundImage": "./assets/images/adaptive-icon.png"
+            },
+            "predictiveBackGestureEnabled": false,
+            "package": "com.anonymous.soundlightmobile"
+        },
+        "web": {
+            "output": "static",
+            "favicon": "./assets/images/icon.png"
+        },
+        "plugins": [
+            "expo-router",
+            [
+                "expo-splash-screen",
+                {
+                    "backgroundColor": "#3A2723",
+                    "image": "./assets/images/icon.png",
+                    "imageWidth": 150
+                }
+            ],
+            "expo-sqlite",
+            "expo-audio"
+        ],
+        "experiments": {
+            "typedRoutes": true,
+            "reactCompiler": true
         }
-      ]
-    ],
-    "experiments": {
-      "typedRoutes": true,
-      "reactCompiler": true
     }
-  }
 }
